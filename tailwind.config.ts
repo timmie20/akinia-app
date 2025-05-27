@@ -4,6 +4,7 @@ const config = {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
+    "./features/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
@@ -51,6 +52,13 @@ const config = {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        custom: {
+          white: "var(--custom-white)",
+          vanDyke: "var(--van-dyke)",
+          vanDyke2: "var(--van-dyke-2)",
+          umber: "var(--umber)",
+          vanDyke3: "var(--van-dyke-3)",
         },
       },
       borderRadius: {

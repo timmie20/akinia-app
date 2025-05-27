@@ -1,7 +1,7 @@
-export const WhatsNew = () => {
+export const Companies = () => {
   return (
     <main className="mx-auto max-w-screen-md">
-      <h1>whats new here</h1>
+      <h1>Companies</h1>
     </main>
   );
 };

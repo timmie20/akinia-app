@@ -40,9 +40,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <main className="flex">
-            <SideNav />
-            <div>{children}</div>
+          <SideNav />
+          <main className="min-h-screen pl-[230px] pt-14">
+            <div className="p-6">{children}</div>
           </main>
         </ThemeProvider>
       </body>
