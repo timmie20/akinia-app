@@ -55,7 +55,7 @@ export default function SideNav() {
     <div className="border-custom-umber/30 fixed left-0 top-14 h-[calc(100vh-3.5rem)] w-[250px] border-r-[1px] bg-background px-4 shadow-sm">
       <nav className="mt-6">
         <p className="mb-2 ml-4 text-sm text-slate-500">Explore</p>
-        <ul className="flex flex-col items-start gap-3 text-left">
+        <ul className="flex flex-col items-start gap-2 text-left">
           {navItems.map(({ id, label, path, icon: Icon }) => {
             const isActive = pathname === path;
 
