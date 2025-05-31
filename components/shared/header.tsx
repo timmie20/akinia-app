@@ -11,7 +11,7 @@ import {
 
 export default function Header() {
   return (
-    <div className="bg-custom-vanDyke text-custom-white fixed left-0 right-0 top-0 z-50 flex h-14 w-full items-center justify-between py-2 pl-3 pr-8 shadow-md">
+    <div className="fixed left-0 right-0 top-0 z-[9999px] flex h-14 w-full items-center justify-between bg-custom-vanDyke py-2 pl-3 pr-8 text-custom-white shadow-md">
       <div className="w-[20%]">
         <Image
           src="/images/akinia-logo-new.png"
@@ -24,7 +24,7 @@ export default function Header() {
         <Search className="absolute left-2 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-500" />
         <Input
           placeholder="Search..."
-          className="placeholder:text-custom-white h-8 w-full border-none bg-white/10 pl-8 text-white focus-visible:ring-1 focus-visible:ring-white/50"
+          className="h-8 w-full border-none bg-white/10 pl-8 text-white placeholder:text-custom-white focus-visible:ring-1 focus-visible:ring-white/50"
         />
       </div>
 
