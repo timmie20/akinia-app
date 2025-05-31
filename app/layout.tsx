@@ -41,21 +41,32 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.className} suppressHydrationWarning>
       <body className="bg-background text-foreground">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Header />
-          <SideNav />
-          <main className="min-h-screen bg-slate-50 pl-[250px] pt-14">
-            <div className="p-6">
-              <FilterProvider>{children}</FilterProvider>
-            </div>
-          </main>
-        </ThemeProvider>
+        <Header />
+        <SideNav />
+        <main className="min-h-screen bg-slate-50 pl-[250px] pt-14">
+          <div className="p-6">
+            <FilterProvider>{children}</FilterProvider>
+          </div>
+        </main>
       </body>
     </html>
+    // <html lang="en" className={poppins.className} suppressHydrationWarning>
+    //   <body className="bg-background text-foreground">
+    //     <ThemeProvider
+    //       attribute="class"
+    //       defaultTheme="system"
+    //       enableSystem
+    //       disableTransitionOnChange
+    //     >
+    //       <Header />
+    //       <SideNav />
+    //       <main className="min-h-screen bg-slate-50 pl-[250px] pt-14">
+    //         <div className="p-6">
+    //           <FilterProvider>{children}</FilterProvider>
+    //         </div>
+    //       </main>
+    //     </ThemeProvider>
+    //   </body>
+    // </html>
   );
 }
